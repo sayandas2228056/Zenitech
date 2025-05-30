@@ -264,31 +264,36 @@ const Hero = () => {
         {/* Premium CTA Buttons - Responsive stack */}
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center justify-center animate-fade-in-up w-full max-w-4xl px-4" 
              style={{ animationDelay: '0.8s' }}>
+              <a href="/contact">
           <button className="premium-btn primary group w-full sm:w-auto">
             <span className="relative z-10 flex items-center justify-center gap-2">
-              <a href="/contact">
+              
               Get Started
-              </a>
+              
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </span>
           </button>
+          </a>
           
+          <a href="/product-demo">
           <button className="premium-btn secondary group w-full sm:w-auto">
             <span className="relative z-10 flex items-center justify-center gap-2">
-              <a href="/product-demo">
-              <Play className="w-4 h-4" />
-              Watch Demo
-              </a>
+              
+              <Play className="w-4 h-4" /> Watch Demo
+             
+              
             </span>
           </button>
+          </a>
           
-          <button className="premium-btn tertiary w-full sm:w-auto">
+          <a href="/appointment">
+          <button  className="premium-btn tertiary w-full sm:w-auto">
             <span className="relative z-10">
-              <a href="/appointment">
               Schedule Consultation
-              </a>
+      
             </span>
           </button>
+          </a>
         </div>
 
         {/* Trust Indicators - Responsive */}
