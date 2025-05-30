@@ -68,7 +68,7 @@ const Cont = () => {
 
           {/* CTA Button with premium styling */}
           <div className={`flex justify-center lg:justify-start mb-12 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`} style={{transitionDelay: '0.8s'}}>
-            <button className="group relative overflow-hidden bg-white text-black px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-white/25">
+            <a href="/contact"><button className="group relative overflow-hidden bg-white text-black px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-white/25">
               <span className="relative z-10 flex items-center">
                 Contact Us
                 <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -76,7 +76,7 @@ const Cont = () => {
                 </svg>
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
-            </button>
+            </button></a>
           </div>
 
         </div>
