@@ -10,7 +10,7 @@ exports.handleDemoForm = async (req, res) => {
 
     const mailOptions = {
       from: email,
-      to: 'sayandas010124@gmail.com',
+      to: 'info@zenitech.in',
       subject: `New Demo Request from ${name}`,
       html: `
         <div style="font-family: Arial, sans-serif; padding: 20px; background:#f9f9f9; color:#333;">

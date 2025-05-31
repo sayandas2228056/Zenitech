@@ -19,7 +19,7 @@ exports.handleContactForm = async (req, res) => {
 
     const mailOptions = {
       from: email,
-      to: 'sayandas010124@gmail.com',
+      to: 'info@zenitech.in',
       subject: `New Contact Form Submission from ${name}`,
       html: `
         <div style="font-family: Arial, sans-serif; padding: 20px; background-color: #f9f9f9;">

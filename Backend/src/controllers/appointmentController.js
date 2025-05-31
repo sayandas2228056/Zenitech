@@ -28,7 +28,7 @@ exports.handleAppointmentForm = async (req, res) => {
     // Create email content
     const mailOptions = {
       from: email,
-      to: 'sayandas010124@gmail.com',
+      to: 'info@zenitech.in',
       subject: `New Appointment Request from ${fullName}`,
       html: `
         <div style="font-family: Arial, sans-serif; padding: 20px; background-color: #f9f9f9;">
