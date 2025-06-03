@@ -162,7 +162,7 @@ const Partners = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-blue-50 font-sans">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-br from-blue-700/80 via-blue-100/40 to-blue-700/80 text-gray-900 overflow-hidden animate-on-scroll" style={{ animationDelay: '0.1s' }}>
+      <div className="relative bg-gradient-to-br from-blue-700/80 via-blue-300/40 to-blue-700/80 text-gray-900 overflow-hidden animate-on-scroll" style={{ animationDelay: '0.1s' }}>
         <div className="absolute inset-0 pointer-events-none select-none">
           <div className="absolute inset-0 bg-white/60 backdrop-blur-xl" />
         </div>
