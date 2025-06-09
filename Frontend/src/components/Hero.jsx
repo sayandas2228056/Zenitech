@@ -218,7 +218,7 @@ const Hero = () => {
         </div>
 
         {/* Enhanced Welcome Badge - Responsive */}
-        <div className="mt-15 premium-badge mb-4 sm:mb-6 lg:mb-8 animate-float-in" style={{ animationDelay: "0.3s" }}>
+        <div className="mt-20 premium-badge mb-4 sm:mb-6 lg:mb-8 animate-float-in" style={{ animationDelay: "0.3s" }}>
           <div className="flex items-center gap-2 sm:gap-3">
             <Sparkles className="h-4 w-4 sm:h-5 sm:w-5 text-orange-400 animate-spin-slow" />
             <span className="text-white font-bold tracking-wider text-xs sm:text-sm">
@@ -260,8 +260,8 @@ const Hero = () => {
         <p className="text-white/90 text-base sm:text-lg md:text-xl lg:text-2xl max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-3xl mx-auto mb-6 sm:mb-8 lg:mb-10 leading-relaxed animate-fade-in-up px-2" 
            style={{ animationDelay: '0.6s' }}>
           Your Trusted Tech Ally in
-          <span className="text-orange-400 font-semibold"> Cloud, Cybersecurity,</span> 
-          <span className="text-orange-400 font-semibold"> Software , IT and Telecom Services</span>
+          <span className="text-orange-400 font-semibold"> Cloud Computing, Cyber Security, Software, IT & Telecom Services</span> 
+          <span className="text-orange-400 font-semibold"> </span>
         </p>
 
         {/* Premium CTA Buttons - Responsive stack */}
