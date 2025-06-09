@@ -261,7 +261,7 @@ const Hero = () => {
            style={{ animationDelay: '0.6s' }}>
           Your Trusted Tech Ally in
           <span className="text-orange-400 font-semibold"> Cloud, Cybersecurity,</span> 
-          <span className="text-orange-400 font-semibold"> Software & Telecom</span>
+          <span className="text-orange-400 font-semibold"> Software , IT and Telecom Services</span>
         </p>
 
         {/* Premium CTA Buttons - Responsive stack */}
