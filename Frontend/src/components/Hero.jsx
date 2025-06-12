@@ -218,7 +218,7 @@ const Hero = () => {
         </div>
 
         {/* Enhanced Welcome Badge - Responsive */}
-        <div className="mt-20 premium-badge mb-4 sm:mb-6 lg:mb-8 animate-float-in" style={{ animationDelay: "0.3s" }}>
+        <div className=" premium-badge mb-4 sm:mb-6 lg:mb-8 animate-float-in" style={{ animationDelay: "0.3s" }}>
           <div className="flex items-center gap-2 sm:gap-3">
             <Sparkles className="h-4 w-4 sm:h-5 sm:w-5 text-orange-400 animate-spin-slow" />
             <span className="text-white font-bold tracking-wider text-xs sm:text-sm">
