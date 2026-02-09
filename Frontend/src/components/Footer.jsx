@@ -204,7 +204,7 @@ const Footer = () => {
         <div className="border-t border-slate-700 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             <p className="text-slate-400 text-sm">
-              © 2025 <span className="text-orange-400 font-semibold">Zenitech</span><span className="text-blue-400 font-semibold"> Solutions</span>. All rights reserved.
+              © 2026 <span className="text-orange-400 font-semibold">Zenitech</span><span className="text-blue-400 font-semibold"> Solutions</span>. All rights reserved.
             </p>
             <p className="text-slate-400 text-sm">
               Developed by <span className="text-orange-400 font-semibold">Zenitech</span><span className="text-blue-400 font-semibold"> Solutions</span>

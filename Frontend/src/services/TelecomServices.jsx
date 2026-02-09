@@ -435,8 +435,8 @@ const TelecomServices = () => {
                   </div>
                   <div>
                     <p className="font-semibold mb-1">Call Us</p>
-                    <p className="text-blue-200">+91 98765 43210</p>
-                    <p className="text-blue-200">+91 98765 43211</p>
+                    <p className="text-blue-200">+91 88200 66999</p>
+                    <p className="text-blue-200">+91 74390 04545</p>
                   </div>
                 </div>
                 

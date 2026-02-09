@@ -82,7 +82,7 @@ const FounderPage = () => {
                   <div className="flex items-center gap-3 text-slate-700">
                     <Phone className="text-blue-900 shrink-0" size={16} />
                     <a href="tel:+918820066999" className="text-sm hover:text-blue-900 transition-colors">
-                      +91 8820066999
+                      +91 88200 66999
                     </a>
                   </div>
                   <div className="flex items-center gap-3 text-slate-700">

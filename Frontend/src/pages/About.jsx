@@ -21,7 +21,7 @@ import Pic1 from "../assets/AboutPagePic/Pic1.jpg";
 import Pic2 from "../assets/AboutPagePic/Pic2.jpg";
 import Logo from "../assets/Logo.jpg";
 import Founder from '../assets/Founder.jpg';
-import { FaLinkedin, FaFacebookF, FaWhatsapp, FaTwitter } from 'react-icons/fa';
+import { FaLinkedin, FaFacebookF, FaWhatsapp } from 'react-icons/fa';
 import PartSection from '../components/PartSection';
 import Clients from '../components/Clients';
 import Cont from '../components/Cont';
@@ -116,14 +116,13 @@ const About = () => {
     title: 'Founder & CEO',
     summary: 'Technology visionary with 20+ years of experience in Enterprise IT Solutions. Expertise in IT, Cloud, Cybersecurity, Software , and Telecom Services.',
     email: 'haider@zenitech.in',
-    phone: '+91 8820066999',
+    phone: '+91 88200 66999',
     location: 'Bangalore / Bengaluru, India',
     image: Founder,
     socials: [
       { name: 'LinkedIn', icon: <FaLinkedin size={18} />, url: 'https://linkedin.com' },
       { name: 'Facebook', icon: <FaFacebookF size={18} />, url: 'https://facebook.com' },
       { name: 'WhatsApp', icon: <FaWhatsapp size={18} />, url: 'https://wa.me/8820066999' },
-      { name: 'Twitter', icon: <FaTwitter size={18} />, url: 'https://twitter.com' },
     ]
   };
 
@@ -166,11 +165,7 @@ const About = () => {
         <meta property="og:image" content="https://zenitech.in/logo.png" />
         <meta property="og:site_name" content="Zenitech Solutions" />
         
-        {/* Twitter Card Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About Zenitech Solutions | IT Services Bengaluru" />
-        <meta name="twitter:description" content="Leading IT services company in Bengaluru specializing in cloud, cybersecurity, and digital transformation." />
-        <meta name="twitter:image" content="https://zenitech.in/logo.png" />
+        {/* Removed Twitter Card Meta Tags */}
         
         {/* Organization Schema */}
         <script type="application/ld+json">
@@ -202,8 +197,7 @@ const About = () => {
             },
             "sameAs": [
               "https://linkedin.com",
-              "https://facebook.com",
-              "https://twitter.com"
+              "https://facebook.com"
             ],
             "serviceArea": {
               "@type": "GeoCircle",
