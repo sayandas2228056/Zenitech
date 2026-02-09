@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
 import {
   Code,
   FileCode,
@@ -146,110 +145,143 @@ const About = () => {
     }
   ];
 
+  useEffect(() => {
+    document.title = "About Zenitech Solutions | Leading IT Services in Bengaluru, India";
+    
+    // Update or create meta tags
+    const updateMetaTag = (name, content) => {
+      let meta = document.querySelector(`meta[name="${name}"]`) || 
+                 document.querySelector(`meta[property="${name}"]`);
+      if (!meta) {
+        meta = document.createElement('meta');
+        meta.setAttribute(name.startsWith('og:') ? 'property' : 'name', name);
+        document.head.appendChild(meta);
+      }
+      meta.setAttribute('content', content);
+    };
+
+    // Basic meta tags
+    updateMetaTag('description', "Learn about Zenitech Solutions, a premier IT services and consulting company in Bengaluru. Discover our expertise in cloud computing, cybersecurity, software development, and telecom services since 2021.");
+    updateMetaTag('keywords', "IT services Bengaluru, cloud computing, cybersecurity, software development, telecom services, IT consulting, system integrator, Zenitech Solutions");
+    updateMetaTag('author', "Zenitech Solutions");
+    updateMetaTag('robots', "index, follow");
+    
+    // Open Graph meta tags
+    updateMetaTag('og:title', "About Zenitech Solutions | Leading IT Services in Bengaluru");
+    updateMetaTag('og:description', "Premier IT services and consulting company specializing in cloud computing, cybersecurity, and digital transformation solutions.");
+    updateMetaTag('og:type', "website");
+    updateMetaTag('og:url', "https://zenitech.in/about");
+    updateMetaTag('og:image', "https://zenitech.in/logo.png");
+    updateMetaTag('og:site_name', "Zenitech Solutions");
+    
+    // Canonical link
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://zenitech.in/about');
+    
+    // Organization Schema
+    const organizationSchema = {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Zenitech Solutions",
+      "url": "https://zenitech.in",
+      "logo": "https://zenitech.in/logo.png",
+      "description": "Premier IT services and consulting company specializing in cloud computing, cybersecurity, software development, and telecom services.",
+      "foundingDate": "2021",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bengaluru",
+        "addressRegion": "Karnataka",
+        "addressCountry": "India"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-8820066999",
+        "contactType": "Customer Support",
+        "email": "haider@zenitech.in"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Mr. Haider Ali",
+        "jobTitle": "Founder & CEO",
+        "email": "haider@zenitech.in"
+      },
+      "sameAs": [
+        "https://linkedin.com",
+        "https://facebook.com"
+      ],
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 12.9716,
+          "longitude": 77.5946
+        },
+        "geoRadius": "50000"
+      }
+    };
+    
+    // FAQ Schema
+    const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqData.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
+    };
+    
+    // Breadcrumb Schema
+    const breadcrumbSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zenitech.in"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://zenitech.in/about"
+        }
+      ]
+    };
+    
+    // Add structured data scripts
+    const addStructuredData = (schema, id) => {
+      let script = document.getElementById(id);
+      if (!script) {
+        script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.id = id;
+        document.head.appendChild(script);
+      }
+      script.textContent = JSON.stringify(schema);
+    };
+    
+    addStructuredData(organizationSchema, 'organization-schema');
+    addStructuredData(faqSchema, 'faq-schema');
+    addStructuredData(breadcrumbSchema, 'breadcrumb-schema');
+    
+    return () => {
+      // Cleanup function if needed
+    };
+  }, [faqData]);
+
   return (
     <div className="bg-white">
-      {/* SEO Meta Tags */}
-      <Helmet>
-        <title>About Zenitech Solutions | Leading IT Services in Bengaluru, India</title>
-        <meta name="description" content="Learn about Zenitech Solutions, a premier IT services and consulting company in Bengaluru. Discover our expertise in cloud computing, cybersecurity, software development, and telecom services since 2021." />
-        <meta name="keywords" content="IT services Bengaluru, cloud computing, cybersecurity, software development, telecom services, IT consulting, system integrator, Zenitech Solutions" />
-        <meta name="author" content="Zenitech Solutions" />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://zenitech.in/about" />
-        
-        {/* Open Graph Meta Tags */}
-        <meta property="og:title" content="About Zenitech Solutions | Leading IT Services in Bengaluru" />
-        <meta property="og:description" content="Premier IT services and consulting company specializing in cloud computing, cybersecurity, and digital transformation solutions." />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://zenitech.in/about" />
-        <meta property="og:image" content="https://zenitech.in/logo.png" />
-        <meta property="og:site_name" content="Zenitech Solutions" />
-        
-        {/* Removed Twitter Card Meta Tags */}
-        
-        {/* Organization Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Zenitech Solutions",
-            "url": "https://zenitech.in",
-            "logo": "https://zenitech.in/logo.png",
-            "description": "Premier IT services and consulting company specializing in cloud computing, cybersecurity, software development, and telecom services.",
-            "foundingDate": "2021",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Bengaluru",
-              "addressRegion": "Karnataka",
-              "addressCountry": "India"
-            },
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "telephone": "+91-8820066999",
-              "contactType": "Customer Support",
-              "email": "haider@zenitech.in"
-            },
-            "founder": {
-              "@type": "Person",
-              "name": "Mr. Haider Ali",
-              "jobTitle": "Founder & CEO",
-              "email": "haider@zenitech.in"
-            },
-            "sameAs": [
-              "https://linkedin.com",
-              "https://facebook.com"
-            ],
-            "serviceArea": {
-              "@type": "GeoCircle",
-              "geoMidpoint": {
-                "@type": "GeoCoordinates",
-                "latitude": 12.9716,
-                "longitude": 77.5946
-              },
-              "geoRadius": "50000"
-            }
-          })}
-        </script>
-        
-        {/* FAQ Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": faqData.map(faq => ({
-              "@type": "Question",
-              "name": faq.question,
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": faq.answer
-              }
-            }))
-          })}
-        </script>
-        
-        {/* Breadcrumb Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://zenitech.in"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "About",
-                "item": "https://zenitech.in/about"
-              }
-            ]
-          })}
-        </script>
-      </Helmet>
-
       {/* Hero Section with Parallax Effect */}
       <div className="relative overflow-hidden bg-gradient-to-r from-blue-950  to-blue-500 text-white">
         {/* Subtle Background Pattern */}
