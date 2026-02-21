@@ -38,13 +38,6 @@ const services = [
     route: '/services/software-licensing',
   },
   {
-    title: 'Software Development',
-    shortDesc: 'Custom web and app development for modern businesses.',
-    fullDesc: 'End-to-end custom software solutions from ideation to deployment. Our development team delivers responsive web applications, API Services mobile apps, and enterprise software with latest technologies.',
-    icon: Code,
-    route: '/services/software-development',
-  },
-  {
     title: 'IT Services',
     shortDesc: 'Professional IT support and infrastructure management.',
     fullDesc: 'Proactive IT management including helpdesk support, system administration, infrastructure monitoring, and technology consulting to keep your operations running smoothly.',

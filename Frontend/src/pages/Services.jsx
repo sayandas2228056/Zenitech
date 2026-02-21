@@ -11,14 +11,8 @@ import {
   Cloud,
   Shield,
   MonitorSmartphone,
-  Code,
   ServerCog,
   Phone,
-  Network,
-  Smartphone,
-  PencilRuler,
-  Building2,
-  Database
 } from 'lucide-react';
 
 const services = [
@@ -87,23 +81,6 @@ const services = [
       'Renewal Planning'
     ],
     technologies: ['Microsoft', 'Oracle', 'Adobe', 'VMware', 'SAP', 'IBM']
-  },
-  {
-    title: 'Software Development',
-    shortDesc: 'Custom software solutions for your unique business needs.',
-    fullDesc:
-      'We develop custom software solutions including web applications, mobile apps, and enterprise software. Our development team uses modern technologies and agile methodologies to deliver scalable and maintainable software solutions.',
-    icon: Code,
-    category: 'Development',
-    features: [
-      'Custom Web Applications',
-      'Mobile App Development',
-      'Enterprise Software',
-      'API Development',
-      'Microservices Architecture',
-      'Legacy System Modernization'
-    ],
-    technologies: ['React', 'Node.js', 'Python', 'Java', '.NET', 'Flutter']
   },
   {
     title: 'Telecom Services',

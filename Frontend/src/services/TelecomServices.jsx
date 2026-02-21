@@ -28,11 +28,9 @@ import { Navigation, Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import LenovoLogo from "../assets/Logo/Lenovo logo.png";
 import RelianceCommLogo from "../assets/Logo/Reliance.png";
 import KrispCallLogo from "../assets/Logo/Krisp Call.png";
 import TataTeleLogo from "../assets/Logo/Tata tele.jpeg";
-import ServerWala from "../assets/Logo/ServerWala.jpg";
 import Telecom1 from "../assets/serviceimg/Telecom1.png";
 import Telecom2 from "../assets/serviceimg/Telecom2.png";
 import Telecom3 from "../assets/serviceimg/Telecom3.jpeg";
@@ -446,8 +444,7 @@ const TelecomServices = () => {
                   </div>
                   <div>
                     <p className="font-semibold mb-1">Email Us</p>
-                    <p className="text-blue-200">info@zenitech.com</p>
-                    <p className="text-blue-200">support@zenitech.com</p>
+                    <p className="text-blue-200">info@zenitech.in</p>
                   </div>
                 </div>
                 

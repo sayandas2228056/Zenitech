@@ -13,10 +13,7 @@ import {
   Phone,
   Mail,
   MapPin,
-  Download,
   Play,
-  Star,
-  Quote,
   Eye,
   Zap,
   Globe,
@@ -32,18 +29,19 @@ import Sophos from "../assets/Logo/Sophos.jpg";
 import SonicWall from "../assets/Logo/SonicWall.jpg";
 import Checkpoint from "../assets/Logo/Checkpoint.jpg";
 import Kaspersky from "../assets/Logo/Kaspersky.jpg";
-import Symantec from "../assets/Logo/Symantec.jpg";
-import Cloudflare from "../assets/Logo/Cloudflare.jpg";
 import Bitdefender from "../assets/Logo/Bitdefender.jpg";
 import Safetica from "../assets/Logo/Safetic.jpg";
 import Acronis from "../assets/Logo/Acronis.jpg";
-import Seqrite from "../assets/Logo/Seqrite.jpg";
 import PaloAlto from "../assets/Logo/Palo-Alto-Logo.jpg";
 import NinjaOne from "../assets/Logo/Nnjaone.logo.png";
 import OpenText from "../assets/Logo/Opentext.png";
-import WatchGuard from "../assets/Logo/WatchGuard.png";
-import Netwrix from "../assets/Logo/Netwritx.png";
 import GTB from "../assets/Logo/GTB logo.jpg";
+import Eset from "../assets/Logo/Eset.jpg";
+import vergecloud from "../assets/Logo/VergeCloud.jpg";
+import knowbe4 from "../assets/Logo/knowbe4.jpg";
+import Escan from "../assets/Logo/eScanLogo.jpg";
+import axidian from "../assets/Logo/axidian.jpg";
+import arcon from "../assets/Logo/arcon.jpg";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -160,23 +158,31 @@ const EnhancedCybersecurity = () => {
   ];
 
   const cybersecurityPartners = [
+
+     { name: "ESET", logo: Eset },
+    { name: "Kaspersky", logo: Kaspersky },
+    { name: "Bitdefender", logo: Bitdefender },
+    { name: "Escan", logo: Escan },
+    { name: "NinjaOne", logo: NinjaOne },
+    { name: "OpenText", logo: OpenText },
+    { name: "Acronis", logo: Acronis },
+    { name: "VergCloud", logo: vergecloud },
+    { name:"KnowBe4", logo:knowbe4},
+    { name: "Safetica", logo: Safetica },
+    { name: "GTB Technologies", logo: GTB }, 
+
+    {name:"Axidian",logo:axidian},
+    {name:"Arcon",logo:arcon},
+
     { name: "Fortinet", logo: Fortinet },
     { name: "Sophos", logo: Sophos },
     { name: "SonicWall", logo: SonicWall },
     { name: "Checkpoint", logo: Checkpoint },
-    { name: "Kaspersky", logo: Kaspersky },
-    { name: "Symantec", logo: Symantec },
-    { name: "Cloudflare", logo: Cloudflare },
-    { name: "Bitdefender", logo: Bitdefender },
-    { name: "Safetica", logo: Safetica },
-    { name: "Acronis", logo: Acronis },
-    { name: "Seqrite", logo: Seqrite },
     { name: "Palo Alto", logo: PaloAlto },
-    { name: "NinjaOne", logo: NinjaOne },
-    { name: "OpenText", logo: OpenText },
-    { name: "WatchGuard", logo: WatchGuard },
-    { name: "Netwrix", logo: Netwrix },
-    { name: "GTB Technologies", logo: GTB },
+    
+   
+    
+    
   ];
 
   return (
@@ -470,13 +476,14 @@ const EnhancedCybersecurity = () => {
                   </div>
                   <div>
                     <p className="font-semibold mb-1">Our Locations</p>
-                    <p className="text-sky-200 font-medium">Bangalore Office</p>
-                    <p className="text-sky-200 mb-2">
-                      Dex Co Work, 2nd Floor, 1383/433, 5th Block, HBR Layout, Bangalore - 560 045, India
+                    <p className="text-orange-200 font-medium">Bengaluru Office</p>
+                    <p className="text-orange-200 mb-2">
+                      Dex Co Work, 2nd Floor, 1383/433, 5th Block, HBR Layout, Bengaluru - 
+                      560043, India
                     </p>
-                    <p className="text-sky-200 font-medium">Kolkata Office</p>
-                    <p className="text-sky-200">
-                      Sunny Seasons, 15/1C, Kamalgazi, P.O. Narendrapur, Kolkata, West Bengal - 700 103, India
+                    <p className="text-orange-200 font-medium">Kolkata Office</p>
+                    <p className="text-orange-200">
+                      Sunny Seasons, 15/1C, Kamalgazi, P.O. Narendrapur, Kolkata, West Bengal - 700103, India
                     </p>
                   </div>
                 </div>

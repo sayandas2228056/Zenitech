@@ -1,11 +1,9 @@
 import React, { useEffect } from 'react';
 import {
-  Code,
   FileCode,
   Laptop2,
   PhoneCall,
   Network,
-  CheckCircle,
   ArrowRight,
   ChevronRight,
   Users,
@@ -96,12 +94,6 @@ const About = () => {
       title: "Software License ",
       description: "Authorized software licensing and integrated solutions for operational efficiency and compliance."
     },
-    {
-      icon: <Code className="text-blue-600" size={40} />,
-      title: "Software Development",
-      description: "Custom software development tailored to meet your business goals and drive digital transformation."
-    },
-    
     {
       icon: <PhoneCall className="text-blue-600" size={40} />,
       title: "Telecom Services",

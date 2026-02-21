@@ -14,7 +14,6 @@ import {
   Phone,
   Mail,
   MapPin,
-  Download,
   Play,
   CheckCircle,
   Settings,
@@ -27,10 +26,6 @@ import Cloud3 from "../assets/serviceimg/Cloud3.jpg";
 import Aws from "../assets/Logo/Aws.jpg";
 import Azure from "../assets/Logo/Azure.jpg";
 import GoogleCloud from "../assets/Logo/GoogleCloud.jpg";
-import Esds from "../assets/Logo/ESDS.jpg";
-import Serverwala from "../assets/Logo/ServerWala.jpg";
-import Dropbox from "../assets/Logo/Dropbox.jpg";
-import OVHcloud from "../assets/Logo/OVHcloud.jpg";
 
 const Cloudcomputing = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -146,10 +141,6 @@ const Cloudcomputing = () => {
     { name: "AWS", logo: Aws },
     { name: "Microsoft AZURE", logo: Azure },
     { name: "GOOGLE CLOUD", logo: GoogleCloud },
-    { name: "ESDS", logo: Esds },
-    { name: "Serverwala", logo: Serverwala },
-    { name: "Dropbox", logo: Dropbox },
-    { name: "OVHcloud", logo: OVHcloud },
   ];
 
   return (
@@ -344,45 +335,26 @@ const Cloudcomputing = () => {
         </div>
       </section>
 
-      {/* Cloud Partners Carousel - Circular and Optimal */}
-      <section className="py-12 bg-gradient-to-r from-sky-50 to-cyan-50">
+      {/* Cloud Partners Carousel - Centered and Animated */}
+      <section className="py-16 bg-gradient-to-r from-sky-50 to-cyan-50">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center text-sky-900 mb-8">Our Cloud Partners</h2>
-          <div className="relative">
-            <button
-              className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white border border-cyan-200 rounded-full p-2 shadow hover:bg-cyan-50 transition disabled:opacity-30"
-              onClick={() => {
-                const el = document.getElementById('cloud-partner-carousel');
-                if (el) el.scrollBy({ left: -220, behavior: 'smooth' });
-              }}
-              aria-label="Scroll left"
-            >
-              <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg>
-            </button>
-            <div
-              id="cloud-partner-carousel"
-              className="flex overflow-x-auto gap-8 py-4 px-8 scrollbar-hide scroll-smooth"
-              style={{ scrollBehavior: 'smooth' }}
-            >
-              {cloudPartners.map((partner, idx) => (
-                <div key={partner.name} className="flex flex-col items-center min-w-[120px] max-w-[140px] mx-2">
-                  <div className="h-24 w-24 flex items-center justify-center bg-gradient-to-br from-sky-200 via-cyan-100 to-blue-100 rounded-full shadow-lg border-4 border-cyan-200 mb-3 transition-transform duration-300 hover:scale-110 hover:shadow-cyan-300/40">
-                    <img src={partner.logo} alt={partner.name + ' logo'} className="max-h-16 max-w-16 object-contain rounded-full" />
-                  </div>
-                  <span className="text-base font-semibold text-sky-900 text-center">{partner.name}</span>
+          <div className="text-center mb-12 animate-on-scroll">
+            <h2 className="text-3xl font-bold text-sky-900 mb-4">Our Cloud Partners</h2>
+            <p className="text-sky-700 max-w-2xl mx-auto">We partner with leading cloud providers to deliver the best solutions for your business</p>
+          </div>
+          <div className="flex justify-center items-center gap-12 py-8">
+            {cloudPartners.map((partner, idx) => (
+              <div key={partner.name} className="flex flex-col items-center group">
+                <div className={`h-28 w-28 flex items-center justify-center bg-gradient-to-br from-sky-200 via-cyan-100 to-blue-100 rounded-full shadow-lg border-4 border-cyan-200 mb-4 transition-all duration-500 hover:scale-110 hover:shadow-cyan-300/40 ${
+                  partner.name === "AWS" ? "animate-float-aws" : 
+                  partner.name === "Microsoft AZURE" ? "animate-float-azure" : 
+                  "animate-float-google"
+                }`}>
+                  <img src={partner.logo} alt={partner.name + ' logo'} className="max-h-20 max-w-20 object-contain rounded-full transition-transform duration-300 group-hover:rotate-6" />
                 </div>
-              ))}
-            </div>
-            <button
-              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white border border-cyan-200 rounded-full p-2 shadow hover:bg-cyan-50 transition disabled:opacity-30"
-              onClick={() => {
-                const el = document.getElementById('cloud-partner-carousel');
-                if (el) el.scrollBy({ left: 220, behavior: 'smooth' });
-              }}
-              aria-label="Scroll right"
-            >
-              <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
-            </button>
+                <span className="text-base font-semibold text-sky-900 text-center">{partner.name}</span>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -454,13 +426,14 @@ const Cloudcomputing = () => {
                     <MapPin size={20} />
                   </div>
                   <div>
-                    <p className="font-semibold mb-1">Our Locations</p>
-                    <p className="text-cyan-200 font-medium">Bengaluru Office</p>
-                    <p className="text-cyan-200 mb-2">
-                      Dex Co Work, 2nd Floor, 1383/433, 5th Block, HBR Layout, Bengaluru - 560045, India
+                   <p className="font-semibold mb-1">Our Locations</p>
+                    <p className="text-orange-200 font-medium">Bengaluru Office</p>
+                    <p className="text-orange-200 mb-2">
+                      Dex Co Work, 2nd Floor, 1383/433, 5th Block, HBR Layout, Bengaluru - 
+                      560043, India
                     </p>
-                    <p className="text-cyan-200 font-medium">Kolkata Office</p>
-                    <p className="text-cyan-200">
+                    <p className="text-orange-200 font-medium">Kolkata Office</p>
+                    <p className="text-orange-200">
                       Sunny Seasons, 15/1C, Kamalgazi, P.O. Narendrapur, Kolkata, West Bengal - 700103, India
                     </p>
                   </div>

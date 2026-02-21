@@ -118,11 +118,6 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/services/software-development" className="text-slate-300 hover:text-orange-400 transition-colors duration-200 text-sm">
-                  Software Development
-                </a>
-              </li>
-              <li>
                 <a href="/services/telecom-services" className="text-slate-300 hover:text-orange-400 transition-colors duration-200 text-sm">
                   Telecom Services
                 </a>
@@ -140,18 +135,18 @@ const Footer = () => {
             
             {/* Bangalore Office */}
             <div className="space-y-4">
-              <h4 className="text-base font-medium text-white mb-3">Bangalore Office</h4>
+              <h4 className="text-base font-medium text-white mb-3">Bengaluru Office</h4>
               <div className="flex items-start space-x-3">
                 <HiOutlineLocationMarker className="mt-1 text-orange-400 flex-shrink-0" size={18} />
                 <a
-                  href="https://www.google.com/maps?q=Dex+Co+Work,+2nd+Floor,+1383/433,+HBR+Layout,+Bangalore+-+560045,+India"
+                  href="https://www.google.com/maps?q=Dex+Co+Work,+2nd+Floor,+1383/433,+HBR+Layout,+Bangalore+-+560043,+India"
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-slate-300 hover:text-orange-400 transition-colors duration-200 text-sm leading-relaxed"
                 >
                   Dex Co Work, 2nd Floor, 1383/433,<br />
                   5th Block, HBR Layout,<br />
-                  Bengaluru - 560045, India
+                  Bengaluru - 560043, India
                 </a>
               </div>
             </div>

@@ -90,7 +90,6 @@ const Navbar = () => {
         { name: 'Cloud Computing', link: '/services/cloud-computing' },
         { name: 'Cyber Security', link: '/services/cybersecurity' },
         { name: 'Software License', link: '/services/software-licensing' },
-        { name: 'Software Development', link: '/services/software-development' },
         { name: 'Telecom Services', link: '/services/telecom-services' },
       ],
     },

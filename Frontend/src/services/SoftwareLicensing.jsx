@@ -34,11 +34,8 @@ import 'swiper/css/pagination';
 import MicrosoftLogo from "../assets/Logo/Microsoft.jpg";
 import AnyDeskLogo from "../assets/Logo/AnyDesk.jpg";
 import AdobeLogo from "../assets/Logo/Adobe.jpg";
-import VmwareLogo from "../assets/Logo/VMware.jpeg";
-import VeeamLogo from "../assets/Logo/Veeam.jpg";
-import EverestIMSLogo from "../assets/Logo/Eversetims.jpeg";
-import GreytHrLogo from "../assets/Logo/GreytHr.jpg";
-
+import google from "../assets/Logo/google.png";
+import hrone from "../assets/Logo/hrone.jpg";
 const SoftwareLicensing = () => {
   const [activeTab, setActiveTab] = useState(0);
 
@@ -151,12 +148,10 @@ const SoftwareLicensing = () => {
 
   const licensingPartners = [
     { name: 'MICROSOFT', logo: MicrosoftLogo },
+    {name: 'Google ', logo:google},
     { name: 'ANYDESK', logo: AnyDeskLogo },
     { name: 'ADOBE', logo: AdobeLogo },
-    { name: 'Vmware', logo: VmwareLogo },
-    { name: 'Veeam', logo: VeeamLogo },
-    { name: 'EVERESTIMS', logo: EverestIMSLogo },
-    { name: 'GREYTHR', logo: GreytHrLogo },
+    { name: 'HROne',logo: hrone},
   ];
 
   return (
@@ -449,14 +444,15 @@ const SoftwareLicensing = () => {
                     <MapPin size={20} />
                   </div>
                   <div>
-                    <p className="font-semibold mb-1">Our Locations</p>
-                    <p className="text-green-200 font-medium">Bangalore Office</p>
-                    <p className="text-green-200 mb-2">
-                      Dex Co Work, 2nd Floor, 1383/433, 5th Block, HBR Layout, Bangalore - 560 045, India
+                   <p className="font-semibold mb-1">Our Locations</p>
+                    <p className="text-orange-200 font-medium">Bengaluru Office</p>
+                    <p className="text-orange-200 mb-2">
+                      Dex Co Work, 2nd Floor, 1383/433, 5th Block, HBR Layout, Bengaluru - 
+                      560043, India
                     </p>
-                    <p className="text-green-200 font-medium">Kolkata Office</p>
-                    <p className="text-green-200">
-                      Sunny Seasons, 15/1C, Kamalgazi, P.O. Narendrapur, Kolkata, West Bengal - 700 103, India
+                    <p className="text-orange-200 font-medium">Kolkata Office</p>
+                    <p className="text-orange-200">
+                      Sunny Seasons, 15/1C, Kamalgazi, P.O. Narendrapur, Kolkata, West Bengal - 700103, India
                     </p>
                   </div>
                 </div>

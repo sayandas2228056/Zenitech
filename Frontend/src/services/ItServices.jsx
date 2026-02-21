@@ -12,12 +12,9 @@ import {
   Phone,
   Mail,
   MapPin,
-  Download,
   Play,
   CheckCircle,
-  Settings,
   Shield,
-  Layers,
   Monitor,
   Cpu,
   Wifi,
@@ -35,9 +32,7 @@ import LenovoLogo from "../assets/Logo/Lenovo logo.png";
 import HpLogo from "../assets/Logo/Hp.jpg";
 import DellLogo from "../assets/Logo/Dell.jpg";
 import SynologyLogo from "../assets/Logo/Synology.jpg";
-import VmwareLogo from "../assets/Logo/VMware.jpeg";
 import VeeamLogo from "../assets/Logo/Veeam.jpg";
-import VeritasLogo from "../assets/Logo/Veritas.jpg";
 
 const ItServices = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -154,9 +149,7 @@ const ItServices = () => {
     { name: "DELL", logo: DellLogo },
     { name: "LENOVO", logo: LenovoLogo },
     { name: "SYNOLOGY", logo: SynologyLogo },
-    { name: "Vmware", logo: VmwareLogo },
     { name: "Veeam", logo: VeeamLogo },
-    { name: "Veritas", logo: VeritasLogo },
   ];
 
   return (
@@ -450,13 +443,14 @@ const ItServices = () => {
                   </div>
                   <div>
                     <p className="font-semibold mb-1">Our Locations</p>
-                    <p className="text-orange-200 font-medium">Bangalore Office</p>
+                    <p className="text-orange-200 font-medium">Bengaluru Office</p>
                     <p className="text-orange-200 mb-2">
-                      Dex Co Work, 2nd Floor, 1383/433, 5th Block, HBR Layout, Bangalore - 560 045, India
+                      Dex Co Work, 2nd Floor, 1383/433, 5th Block, HBR Layout, Bengaluru - 
+                      560043, India
                     </p>
                     <p className="text-orange-200 font-medium">Kolkata Office</p>
                     <p className="text-orange-200">
-                      Sunny Seasons, 15/1C, Kamalgazi, P.O. Narendrapur, Kolkata, West Bengal - 700 103, India
+                      Sunny Seasons, 15/1C, Kamalgazi, P.O. Narendrapur, Kolkata, West Bengal - 700103, India
                     </p>
                   </div>
                 </div>

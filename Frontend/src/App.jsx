@@ -19,7 +19,6 @@ const ProductDemo = lazy(() => import('./pages/ProductDemo'));
 const Appointment = lazy(() => import('./pages/Appointment'));
 const Cybersecurity = lazy(() => import('./services/Cybersecurity'));
 const Cloudcomputing = lazy(() => import('./services/Cloudcomputing'));
-const Softwaredevelopment = lazy(() => import('./services/Softwaredevelopment'));
 const SoftwareLicensing = lazy(() => import('./services/SoftwareLicensing'));
 const TelecomServices = lazy(() => import('./services/TelecomServices'));
 const ItServices = lazy(() => import('./services/ItServices'));
@@ -65,7 +64,6 @@ const App = () => {
           <Route path="/appointment" element={<Appointment/>}/>
           <Route path="/services/cybersecurity" element={<Cybersecurity/>}/>
           <Route path="/services/cloud-computing" element={<Cloudcomputing/>}/>
-          <Route path="/services/software-development" element={<Softwaredevelopment/>}/>
           <Route path="/services/software-licensing" element={<SoftwareLicensing/>}/>
           <Route path="/services/telecom-services" element={<TelecomServices/>}/>
           <Route path="/services/it-services" element={<ItServices/>}/>
