@@ -308,7 +308,7 @@ const Hero = () => {
                 className="text-lg md:text-xl text-white leading-relaxed text-center font-normal drop-shadow-md max-w-4xl opacity-0 scale-90 animate-pop-in"
                 style={{ fontFamily: 'Inter, Arial, sans-serif', animationDelay: '0.5s', animationFillMode: 'forwards' }}
               >
-                Empower your business with our expertise in <span className="text-orange-400 font-extrabold" style={{ fontWeight: 800 }}>IT Services, Cloud, Cyber Security, Software Licensing, Software Development & Telecom Services.</span>
+                Empower your business with our expertise in <span className="text-orange-400 font-extrabold" style={{ fontWeight: 800 }}>IT Services, Cloud, Cyber Security, Software Licensing & Telecom Services.</span>
                 <br/>
                 <span>We are committed to delivering innovative, secure, and scalable solutions tailored to meet the evolving needs of your enterprise.</span>
               </p>

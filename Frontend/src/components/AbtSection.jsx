@@ -55,7 +55,7 @@ const AbtSection = () => {
               Zenitech Solutions is a leading IT Services & Consulting company headquartered in Bengaluru — the Silicon Valley of India.
             </p>
             <p className="text-sm md:text-base text-gray-700">
-              We provide a comprehensive portfolio of services including Cloud Computing, Cybersecurity, IT Services, Software License, Software Development, Telecom Services, etc.
+              We provide a comprehensive portfolio of services including Cloud Computing, Cybersecurity, IT Services, Software License, Telecom Services, etc.
             </p>
             <p className="text-sm md:text-base text-gray-700">
               Through strong partnerships with top-tier OEMs and global tech brands, we consistently deliver high-value outcomes across multiple industries.
