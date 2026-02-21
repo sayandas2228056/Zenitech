@@ -359,13 +359,13 @@ const About = () => {
                 <span className="font-semibold text-orange-500">Zenitech </span><span className="text-blue-700">Solutions</span> is a premier IT Services & Consulting company headquartered in Bengaluru, the Silicon Valley of India. As a trusted system integrator, we specialize in providing comprehensive technology solutions that drive business growth and operational excellence.
               </p>
               <p className="text-lg">
-                With a team of highly skilled professionals, we offer expert services in IT, Cloud, Cyber Security, Software License, Software Development, Telecom Services, etc. Our strategic partnerships with leading OEMs and technology providers enable us to deliver cutting-edge solutions tailored to meet the unique needs of our diverse clientele.              </p>
+                With a team of highly skilled professionals, we offer expert services in IT, Cloud, Cyber Security, Software License, Telecom Services, etc. Our strategic partnerships with leading OEMs and technology providers enable us to deliver cutting-edge solutions tailored to meet the unique needs of our diverse clientele.              </p>
               <p className="text-lg">
                 We proudly serve organizations across various sectors, including IT/ITES, BFSI, Manufacturing, Healthcare, ISPs, Education, and more, helping them navigate the complexities of the digital landscape with confidence.
               </p>
             </div>
             <div className="mt-8">
-              <a href="#services" className="inline-flex items-center text-blue-700 font-semibold hover:text-blue-900 transition-colors group">
+              <a href="/services" className="inline-flex items-center text-blue-700 font-semibold hover:text-blue-900 transition-colors group">
                 Explore Our Services <ChevronRight className="ml-1 group-hover:ml-2 transition-all" />
               </a>
             </div>
