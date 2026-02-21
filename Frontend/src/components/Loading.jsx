@@ -3,11 +3,8 @@ import Logo from '../assets/Logo.jpg';
  
 
 const loadingSteps = [
-  'Initializing systems...',
   'Loading resources...',
-  'Connecting services...',
   'Almost ready...',
-  'Complete!',
 ];
 
 const Loading = () => {
@@ -57,7 +54,6 @@ const Loading = () => {
             <span className="bg-gradient-to-r from-orange-500 to-amber-600 bg-clip-text text-transparent">Zenitech</span>{' '}
             <span className="bg-gradient-to-r from-sky-500 to-indigo-600 bg-clip-text text-transparent">Solutions</span>
           </h1>
-          <p className="text-slate-500 text-lg tracking-widest font-light">INNOVATIVE TECHNOLOGY SOLUTIONS</p>
         </div>
 
         {/* Loading spinner */}
