@@ -152,7 +152,7 @@ const Partners = () => {
     {
       title: 'Cyber Security',
       description: 'Comprehensive cybersecurity partners for firewalls, endpoint security, DLP, and advanced threat protection.',
-      partners: ['ESET','Kaspersky','Bitdefender','Escan','NinjaOne','OpenText','Acronis','VergCloud','KnowBe4','Safetica','GTB Technologies','Axidian','Arcon','Fortinet','Sophos','SonicWall','Checkpoint','Palo Alto','Acronis','Dropbox','AnyDesk','Adobe','Google Cloud','Azure','Microsoft','ESDS','Checkpoint','OVHcloud','Serverwala','Cloudflare','Palo Alto','NinjaOne','OpenText','WatchGuard','Netwrix','GTB Technologies','Vmware','EVERESTIMS','TATA Tele','KrispCall','Reliance Communications','Stringee','SonicWall','Checkpoint','Palo Alto'],
+      partners: ['ESET','Kaspersky','Bitdefender','Escan','NinjaOne','OpenText','Acronis','VergCloud','KnowBe4','Safetica','GTB Technologies','Axidian','Arcon','Fortinet','Sophos','SonicWall','Checkpoint','Palo Alto',],
       icon: '🔒'
     },
     {
