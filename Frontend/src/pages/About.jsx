@@ -72,12 +72,6 @@ const About = () => {
 
   // Core services
   const services = [
-    
-    {
-      icon: <Laptop2 className="text-blue-600" size={40} />,
-      title: "IT Services",
-      description: "Reliable IT services and consulting services to keep your business running smoothly"
-    },
     {
       icon: <Clock className="text-blue-600" size={40} />,
       title: "Cloud Computing",
@@ -98,6 +92,12 @@ const About = () => {
       icon: <PhoneCall className="text-blue-600" size={40} />,
       title: "Telecom Services",
       description: "Advanced communication systems and services to connect and empower your organization."
+    },
+    
+    {
+      icon: <Laptop2 className="text-blue-600" size={40} />,
+      title: "IT Services",
+      description: "Reliable IT services and consulting services to keep your business running smoothly"
     },
   ];
 
