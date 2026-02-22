@@ -17,24 +17,6 @@ import {
 
 const services = [
   {
-    title: 'IT Services',
-    shortDesc: 'Comprehensive IT infrastructure and support services.',
-    fullDesc:
-      'Our IT services include system administration, network management, server optimization, and IT support. We ensure your IT infrastructure remains reliable, secure, and aligned with your business objectives.',
-    icon: ServerCog,
-    category: 'Infrastructure',
-    features: [
-      'System Administration',
-      'Network Management',
-      'Server Optimization',
-      'IT Support & Helpdesk',
-      'Infrastructure Monitoring',
-      'Performance Tuning'
-    ],
-    technologies: ['Windows Server', 'Linux', 'Cisco', 'VMware', 'Ansible', 'Nagios']
-  },
-
-  {
     title: 'Cloud Computing',
     shortDesc: 'Secure and scalable cloud services for digital transformation.',
     fullDesc:
@@ -94,7 +76,24 @@ const services = [
       'Contact Center Solutions',
     ],
     technologies: ['Cisco', 'Avaya', 'Microsoft Teams', 'Zoom', 'SIP', '5G']
-  }
+  },
+  {
+    title: 'IT Services',
+    shortDesc: 'Comprehensive IT infrastructure and support services.',
+    fullDesc:
+      'Our IT services include system administration, network management, server optimization, and IT support. We ensure your IT infrastructure remains reliable, secure, and aligned with your business objectives.',
+    icon: ServerCog,
+    category: 'Infrastructure',
+    features: [
+      'System Administration',
+      'Network Management',
+      'Server Optimization',
+      'IT Support & Helpdesk',
+      'Infrastructure Monitoring',
+      'Performance Tuning'
+    ],
+    technologies: ['Windows Server', 'Linux', 'Cisco', 'VMware', 'Ansible', 'Nagios']
+  },
 ];
 
 // Add case studies data
