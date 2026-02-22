@@ -29,7 +29,15 @@ const clients = [
     { name: "Verifacts Services Pvt Ltd" },
     { name: "National Gems Higher Secondary School" },
     { name: "Techno India" },
-    { name: "Smart Call Centre" }
+    { name: "Smart Call Centre" },
+    { name: "42 Card Solutions Pvt Ltd" },
+    { name: "VivaMoney Solutions Pvt Ltd" },
+    { name: "Wobot Intelligence Pvt Ltd" },
+    { name: "Damro Furniture Pvt Ltd" },
+    { name: "Mobileum India Pvt Ltd" },
+    { name: "5&8.AI" },
+    { name: "DXN Manufacturing India Pvt Ltd" },
+    { name: "Foiwe Info Global Solutions Pvt Ltd" },
 ];
 
 // Industry icon renderer based on index
