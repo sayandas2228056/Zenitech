@@ -47,7 +47,13 @@ import NinjaOneLogo from '../assets/Logo/Nnjaone.logo.png';
 import PaloAltoLogo from '../assets/Logo/Palo-Alto-Logo.jpg';
 import CloudflareLogo from '../assets/Logo/Cloudflare.jpg';
 import StringeeLogo from '../assets/Logo/Stringee.png';
-
+import Eset from '../assets/Logo/Eset.jpg';
+import Escan from '../assets/Logo/eScanLogo.jpg';
+import VergeCloud from '../assets/Logo/VergeCloud.jpg';
+import KnowBe4 from '../assets/Logo/knowbe4.jpg';
+import Axidian from '../assets/Logo/axidian.jpg';
+import Arcon from '../assets/Logo/arcon.jpg';
+import Hrone from '../assets/Logo/hrone.jpg';
 // Create a mapping of partner names to their logo imports
 const partnerLogos = {
   'AWS': Aws,
@@ -58,7 +64,12 @@ const partnerLogos = {
   'OVHcloud': OVHcloud,
   'Serverwala': ServerWala,
   'CLOUDFLARE': CloudflareLogo,
+  'Cloudflare': CloudflareLogo,
   'PALO ALTO': PaloAltoLogo,
+  'Palo Alto': PaloAltoLogo,
+  'Google Cloud': GoogleCloud,
+  'Azure': Azure,
+  'Microsoft': Microsoft,
   'NinjaOne': NinjaOneLogo,
   'OpenText': OpenTextLogo,
   'WatchGuard': WatchGuardLogo,
@@ -70,28 +81,60 @@ const partnerLogos = {
   'KrispCall': KrispCallLogo,
   'Reliance Communications': RelianceCommLogo,
   'LENOVO': LenovoLogo,
+  'ESET': Eset,
+  'Eset': Eset,
+  'Escan': Escan,
+  'Escan ': Escan,
+  'eScan': Escan,
+  'eScanLogo': Escan,
+  'VergeCloud': VergeCloud,
+  'VergCloud': VergeCloud,
+  'KnowBe4': KnowBe4,
+  'Axidian': Axidian,
+  'Arcon': Arcon,
   'FORTINET': Fortinet,
+  'Fortinet': Fortinet,
   'SOPHOS': Sophos,
+  'Sophos': Sophos,
   'SONICWALL': SonicWall,
+  'SonicWall': SonicWall,
   'KASPERSKY': Kaspersky,
+  'Kaspersky': Kaspersky,
   'SYMANTEC': Symantec,
+  'Symantec': Symantec,
   'BITDEFENDER': Bitdefender,
+  'Bitdefender': Bitdefender,
   'SAFETICA': Safetic,
+  'Safetica': Safetic,
   'ACRONIS': Acronis,
+  'Acronis': Acronis,
   'SEQRITE': Seqrite,
   'HP': Hp,
   'DELL': Dell,
   'SYNOLOGY': Synology,
   'Veeam': Veeam,
   'ANYDESK': AnyDesk,
+  'AnyDesk': AnyDesk,
   'ADOBE': Adobe,
+  'Adobe': Adobe,
   'GREYTHR': GreytHr,
   'RELIANCE JIO': Jio,
   'Dropbox': Dropbox,
   'Veritas': Veritas,
   'MICROSOFT': Microsoft,
   'Stringee': StringeeLogo,
+  'HRone': Hrone,
 };
+
+const normalizePartnerName = (name) =>
+  String(name)
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '');
+
+const partnerLogosNormalized = Object.fromEntries(
+  Object.entries(partnerLogos).map(([name, logo]) => [normalizePartnerName(name), logo])
+);
 
 const Partners = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -101,19 +144,19 @@ const Partners = () => {
     {
       title: 'Cloud Solutions',
       description: 'Leading cloud service providers and technology partners for scalable, secure, and efficient cloud solutions.',
-      partners: ['AWS', 'Microsoft AZURE', 'GOOGLE CLOUD', 'ESDS', 'Serverwala', 'Dropbox', 'OVHcloud'],
+      partners: ['AWS', 'Microsoft AZURE', 'GOOGLE CLOUD'],
       icon: '☁️'
     },
     {
       title: 'Cyber Security',
       description: 'Comprehensive cybersecurity partners for firewalls, endpoint security, DLP, and advanced threat protection.',
-      partners: ['FORTINET', 'SOPHOS', 'SONICWALL', 'Checkpoint', 'KASPERSKY', 'SYMANTEC', 'CLOUDFLARE', 'BITDEFENDER', 'SAFETICA', 'ACRONIS', 'SEQRITE', 'PALO ALTO', 'NinjaOne', 'OpenText', 'WatchGuard', 'Netwrix', 'GTB Technologies'],
+      partners: ['ESET','Kaspersky','Bitdefender','Escan','NinjaOne','OpenText','Acronis','VergCloud','KnowBe4','Safetica','GTB Technologies','Axidian','Arcon','Fortinet','Sophos','SonicWall','Checkpoint','Palo Alto','Acronis','Dropbox','AnyDesk','Adobe','Google Cloud','Azure','Microsoft','ESDS','Checkpoint','OVHcloud','Serverwala','Cloudflare','Palo Alto','NinjaOne','OpenText','WatchGuard','Netwrix','GTB Technologies','Vmware','EVERESTIMS','TATA Tele','KrispCall','Reliance Communications','Stringee','SonicWall','Checkpoint','Palo Alto'],
       icon: '🔒'
     },
     {
       title: 'Software License',
       description: 'Strategic software procurement and license management partners for your business needs.',
-      partners: ['MICROSOFT', 'ANYDESK', 'ADOBE', 'Vmware', 'Veeam', 'EVERESTIMS', 'GREYTHR'],
+      partners: ['MICROSOFT', 'ANYDESK', 'ADOBE', 'HROne',],
       icon: '💻'
     },
     {
@@ -211,9 +254,9 @@ const Partners = () => {
                         style={{ animationDelay: `${0.1 * pIndex}s`, minHeight: '140px' }}
                       >
                         <div className="h-16 w-full flex items-center justify-center mb-3">
-                          {partnerLogos[partner] ? (
+                          {partnerLogosNormalized[normalizePartnerName(partner)] ? (
                             <img 
-                              src={partnerLogos[partner]} 
+                              src={partnerLogosNormalized[normalizePartnerName(partner)]} 
                               alt={`${partner} logo`}
                               className="max-h-12 max-w-full object-contain transition-transform duration-300 group-hover/card:scale-110"
                             />
