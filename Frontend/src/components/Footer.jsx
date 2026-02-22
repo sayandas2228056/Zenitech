@@ -98,11 +98,6 @@ const Footer = () => {
             </h3>
             <ul className="space-y-3">
               <li>
-                <a href="/services/it-services" className="text-slate-300 hover:text-orange-400 transition-colors duration-200 text-sm">
-                  IT Services
-                </a>
-              </li>
-              <li>
                 <a href="/services/cloud-computing" className="text-slate-300 hover:text-orange-400 transition-colors duration-200 text-sm">
                   Cloud Computing
                 </a>
@@ -120,6 +115,11 @@ const Footer = () => {
               <li>
                 <a href="/services/telecom-services" className="text-slate-300 hover:text-orange-400 transition-colors duration-200 text-sm">
                   Telecom Services
+                </a>
+              </li>
+              <li>
+                <a href="/services/it-services" className="text-slate-300 hover:text-orange-400 transition-colors duration-200 text-sm">
+                  IT Services
                 </a>
               </li>
             </ul>
