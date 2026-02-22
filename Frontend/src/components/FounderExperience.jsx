@@ -13,11 +13,11 @@ const EnhancedCareerTimeline = () => {
       highlights: [
         "Deliver solutions that fit the unique requirements of customers.",
         "Offer products, services, solutions from Reliance Jio, Tata Tele, AWS, Microsoft Azure, Google Cloud, and many more industry leaders.",
-        "Provide comprehensive Cloud Solutions including AWS, Azure, Google Cloud, OVHcloud, and more.",
+        "Provide comprehensive Cloud Solutions including AWS, Azure, Google Cloud and more.",
         "Deliver Cyber Security Solutions including Firewall, Endpoint Security, Data Loss Prevention, and more.",
         "Offer Telecom Services including Internet, MPLS VPN, SD WAN, and Cloud Telephony Solutions."
       ],
-      skills: ["Sales", "Business Development", "IT Services", "Cloud Computing", "Cybersecurity", "Software", "Telecommunications"],
+      skills: ["Sales", "Business Development", "Cloud Computing", "Cybersecurity", "Software", "Telecommunications", "IT Services"],
       color: "from-blue-600 to-indigo-800"
     },
     {
