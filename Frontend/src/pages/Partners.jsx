@@ -224,7 +224,7 @@ const Partners = () => {
             <div className="mt-8 inline-flex items-center space-x-4 text-blue-700">
               <span className="flex items-center space-x-2">
                 <span className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
-                <span>50+ Partners</span>
+                <span>30+ Partners</span>
               </span>
               <span className="w-1 h-6 bg-blue-400 opacity-50"></span>
               <span className="flex items-center space-x-2">
