@@ -54,6 +54,7 @@ import KnowBe4 from '../assets/Logo/knowbe4.jpg';
 import Axidian from '../assets/Logo/axidian.jpg';
 import Arcon from '../assets/Logo/arcon.jpg';
 import Hrone from '../assets/Logo/hrone.jpg';
+import SmartPing from '../assets/Logo/smartping.jpg';
 // Create a mapping of partner names to their logo imports
 const partnerLogos = {
   'AWS': Aws,
@@ -124,6 +125,7 @@ const partnerLogos = {
   'MICROSOFT': Microsoft,
   'Stringee': StringeeLogo,
   'HRone': Hrone,
+  'SmartPing': SmartPing,
 };
 
 const normalizePartnerName = (name) =>
@@ -162,13 +164,13 @@ const Partners = () => {
     {
       title: 'Telecom Services',
       description: 'Telecom partners for internet leased lines, cloud telephony, call center, and international calling solutions.',
-      partners: ['RELIANCE JIO', 'TATA Tele', 'KrispCall', 'Reliance Communications', 'Stringee'],
+      partners: ['RELIANCE JIO', 'TATA Tele', 'SmartPing',],
       icon: '📞'
     },
     {
       title: 'IT Services',
       description: 'Trusted OEMs and partners for servers, storage, backup, and IT infrastructure solutions.',
-      partners: ['HP', 'DELL', 'LENOVO', 'SYNOLOGY', 'Vmware', 'Veeam', 'Veritas'],
+      partners: ['HP', 'DELL', 'LENOVO', 'SYNOLOGY', 'Veeam'],
       icon: '🖥️'
     }
   ];
