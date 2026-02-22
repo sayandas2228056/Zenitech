@@ -27,38 +27,44 @@ import Symantec from "../assets/Logo/Symantec.jpg";
 import Synology from "../assets/Logo/Synology.jpg";
 import TrendMicro from "../assets/Logo/TrendMicro.jpg";
 import Veeam from "../assets/Logo/Veeam.jpg";
-import Veritas from "../assets/Logo/Veritas.jpg";
 import Azure from "../assets/Logo/Azure.jpg";
 import Esds from "../assets/Logo/ESDS.jpg";
 import Checkpoint from "../assets/Logo/Checkpoint.jpg";
-import ServerWala from "../assets/Logo/ServerWala.jpg";
-import KrispCallLogo from "../assets/Logo/Krisp Call.png";
 import TataTeleLogo from "../assets/Logo/Tata tele.jpeg";
 import GTBLogo from "../assets/Logo/GTB logo.jpg";
-import NetwrixLogo from "../assets/Logo/Netwritx.png"; // ❌ not used
-import WatchGuardLogo from "../assets/Logo/WatchGuard.png";
 import OpenTextLogo from "../assets/Logo/Opentext.png";
 import NinjaOneLogo from "../assets/Logo/Nnjaone.logo.png";
 import PaloAltoLogo from "../assets/Logo/Palo-Alto-Logo.jpg";
 import eScanLogo from "../assets/Logo/eScanLogo.jpg";
 import EsetLogo from "../assets/Logo/Eset.jpg";
-import StringeeLogo from "../assets/Logo/Stringee.png";
 import HPLogo from "../assets/Logo/Hp.jpg";
-
+import google from "../assets/Logo/google.png";
+import VergeCloud from "../assets/Logo/VergeCloud.jpg";
+import knowbe4 from "../assets/Logo/knowbe4.jpg";
+import axidian from "../assets/Logo/axidian.jpg";
+import arcon from "../assets/Logo/arcon.jpg";
 // ✅ only keep the ones used in the array below
 const allLogos = [
   { name: "Aws", logo: Aws },
   { name: "Azure", logo: Azure },
   { name: "GoogleCloud", logo: GoogleCloud },
   { name: "Microsoft", logo: Microsoft },
-  { name: "eScan", logo: eScanLogo },
-  { name: "Eset", logo: EsetLogo },
-  { name: "Bitdefender", logo: Bitdefender },
-  { name: "Seqrite", logo: Seqrite },  
-  { name: "Kaspersky", logo: Kaspersky },
-  { name: "NinjaOne", logo: NinjaOneLogo },
+  { name: "Google", logo: google},
+  { name: "AnyDesk", logo: AnyDesk },
+  { name: "Adobe", logo: Adobe },
+{ name: "Eset", logo: EsetLogo },
+{ name: "Kaspersky", logo: Kaspersky },
+{ name: "Bitdefender", logo: Bitdefender },
+{ name: "eScan", logo: eScanLogo },
+ { name: "Seqrite", logo: Seqrite },  
+ { name: "NinjaOne", logo: NinjaOneLogo },
   { name: "OpenText", logo: OpenTextLogo },
   { name: "Acronis", logo: Acronis },
+   { name: "Veeam", logo: Veeam },
+{name:"VergeCloud",logo:VergeCloud},
+{name:"KnowBe4",logo: knowbe4},
+{name:"Axidian",logo: axidian},
+{name:"Arcon",logo: arcon},
   { name: "Safetica", logo: Safetica },
   { name: "GTB", logo: GTBLogo },
   { name: "Fortinet", logo: Fortinet },
@@ -67,11 +73,9 @@ const allLogos = [
   { name: "Checkpoint", logo: Checkpoint },
   { name: "Barracuda", logo: Barracuda },
   { name: "Palo Alto", logo: PaloAltoLogo },
-  { name: "AnyDesk", logo: AnyDesk },
-  { name: "Adobe", logo: Adobe },
-  { name: "Veeam", logo: Veeam },
   { name: "Tata Tele", logo: TataTeleLogo },
   { name: "Jio", logo: Jio },
+  { name: "HP", logo: HPLogo},
 ];
 
 const PartSection = () => {
