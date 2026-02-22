@@ -23,19 +23,12 @@ import {
   Cpu,
   Settings
 } from 'lucide-react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay, Pagination } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import RelianceCommLogo from "../assets/Logo/Reliance.png";
-import KrispCallLogo from "../assets/Logo/Krisp Call.png";
 import TataTeleLogo from "../assets/Logo/Tata tele.jpeg";
 import Telecom1 from "../assets/serviceimg/Telecom1.png";
 import Telecom2 from "../assets/serviceimg/Telecom2.png";
 import Telecom3 from "../assets/serviceimg/Telecom3.jpeg";
 import JioLogo from "../assets/Logo/Jio.jpg";
-import StringeeLogo from "../assets/Logo/Stringee.png";
+import smartping from "../assets/Logo/smartping.jpg";
 
 const TelecomServices = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -150,9 +143,7 @@ const TelecomServices = () => {
   const telecomPartners = [
     { name: "RELIANCE JIO", logo: JioLogo },
     { name: "TATA Tele", logo: TataTeleLogo },
-    { name: "KrispCall", logo: KrispCallLogo },
-    { name: "Reliance Communications", logo: RelianceCommLogo },
-    { name: "Stringee", logo: StringeeLogo },
+    { name:"SmartPing", logo: smartping},
   ];
 
   return (
@@ -169,14 +160,14 @@ const TelecomServices = () => {
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-12 h-1 bg-blue-400"></div>
                 <p className="text-blue-200 font-semibold text-lg tracking-wider">
-                  TELECOM SOLUTIONS
+                  TELECOM SERVICES
                 </p>
               </div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                 Connect Your Business <span className="text-blue-300">Future</span>
               </h1>
               <p className="text-xl opacity-90 leading-relaxed mb-8 max-w-lg">
-                Comprehensive telecom solutions to power your business communications with enterprise-grade infrastructure and 24/7 support.
+                Comprehensive telecom services to power your business communications with enterprise-grade infrastructure and 24/7 support.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <a
@@ -239,38 +230,11 @@ const TelecomServices = () => {
               Comprehensive Telecom Services
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Power your business with our advanced telecom solutions designed to provide reliable connectivity and seamless communication.
+              Power your business with our advanced telecom services designed to provide reliable connectivity and seamless communication.
             </p>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-8">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all group border border-gray-100 animate-on-scroll"
-              >
-                <div className="flex items-start gap-6">
-                  <div className="bg-blue-50 w-20 h-20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-100 transition-colors text-blue-600">
-                    {service.icon}
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                      {service.title}
-                    </h3>
-                    <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
-                    <div className="grid grid-cols-2 gap-3">
-                      {service.features.map((feature, idx) => (
-                        <div key={idx} className="flex items-center gap-2">
-                          <CheckCircle className="text-blue-600 shrink-0" size={16} />
-                          <span className="text-sm text-gray-700">{feature}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+          
         </div>
       </section>
 
@@ -385,34 +349,22 @@ const TelecomServices = () => {
         </div>
       </section>
 
-      {/* Telecom Partners Carousel */}
-      <section className="py-12 bg-gradient-to-r from-sky-50 to-blue-100">
+      {/* Telecom Partners */}
+      <section className="py-16 bg-gradient-to-r from-sky-50 to-blue-100">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center text-blue-900 mb-8">Our Telecom & Technology Partners</h2>
-          <Swiper
-            modules={[Navigation, Autoplay, Pagination]}
-            spaceBetween={20}
-            slidesPerView={2}
-            navigation
-            pagination={{ clickable: true }}
-            autoplay={{ delay: 2500, disableOnInteraction: false }}
-            breakpoints={{
-              320: { slidesPerView: 2, spaceBetween: 12 },
-              480: { slidesPerView: 3, spaceBetween: 16 },
-              768: { slidesPerView: 4, spaceBetween: 20 },
-              1024: { slidesPerView: 5, spaceBetween: 24 }
-            }}
-            className="py-6"
-          >
-            {telecomPartners.map((item, idx) => (
-              <SwiperSlide key={idx}>
-                <div className="flex flex-col items-center bg-white rounded-full shadow p-4 hover:shadow-lg transition-all border-4 border-sky-100 hover:border-blue-400 w-36 h-36 justify-center mx-auto">
-                  <img src={item.logo} alt={item.name + ' logo'} className="max-h-16 max-w-full object-contain mb-2 rounded-full" />
-                  <span className="text-sm font-medium text-blue-900 text-center mt-2">{item.name}</span>
+          <div className="text-center mb-12 animate-on-scroll">
+            <h2 className="text-3xl font-bold text-blue-900 mb-4">Our Telecom & Technology Partners</h2>
+          </div>
+          <div className="flex flex-wrap justify-center items-center gap-10">
+            {telecomPartners.map((item) => (
+              <div key={item.name} className="flex flex-col items-center">
+                <div className="bg-white shadow p-5 hover:shadow-lg transition-all border-4 border-sky-100 hover:border-blue-400 w-40 h-28 rounded-3xl flex items-center justify-center">
+                  <img src={item.logo} alt={item.name + ' logo'} className="max-h-16 max-w-full object-contain" />
                 </div>
-              </SwiperSlide>
+                <span className="text-sm font-medium text-blue-900 text-center mt-3">{item.name}</span>
+              </div>
             ))}
-          </Swiper>
+          </div>
         </div>
       </section>
 
