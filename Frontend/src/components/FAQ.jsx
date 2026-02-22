@@ -24,7 +24,7 @@ const FAQ = () => {
     {
       question: 'Which cloud platforms do you support?',
       answer:
-        'We support AWS, Azure, Google Cloud, Serverwala, ESDS , OVHcloud, Jio Cloud, and more, covering IaaS, SaaS, PaaS, DR, and Managed Services.',
+        'We support AWS, Azure, Google Cloud and more, covering IaaS, SaaS, PaaS, DR, and Managed Services.',
       category: 'Cloud',
       icon: <Globe size={20} className="text-blue-500" />,
     },

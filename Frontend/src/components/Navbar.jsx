@@ -86,11 +86,11 @@ const Navbar = () => {
       name: 'Services',
       dropdown: [
         { name: 'All Services', link: '/services' },
-        { name: 'IT Services', link: '/services/it-services' },
         { name: 'Cloud Computing', link: '/services/cloud-computing' },
         { name: 'Cyber Security', link: '/services/cybersecurity' },
         { name: 'Software License', link: '/services/software-licensing' },
         { name: 'Telecom Services', link: '/services/telecom-services' },
+        { name: 'IT Services', link: '/services/it-services' },
       ],
     },
     { name: 'Partners', link: '/partners' },
