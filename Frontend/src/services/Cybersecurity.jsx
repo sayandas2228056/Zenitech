@@ -170,19 +170,13 @@ const EnhancedCybersecurity = () => {
     { name:"KnowBe4", logo:knowbe4},
     { name: "Safetica", logo: Safetica },
     { name: "GTB Technologies", logo: GTB }, 
-
     {name:"Axidian",logo:axidian},
     {name:"Arcon",logo:arcon},
-
     { name: "Fortinet", logo: Fortinet },
     { name: "Sophos", logo: Sophos },
     { name: "SonicWall", logo: SonicWall },
     { name: "Checkpoint", logo: Checkpoint },
     { name: "Palo Alto", logo: PaloAlto },
-    
-   
-    
-    
   ];
 
   return (

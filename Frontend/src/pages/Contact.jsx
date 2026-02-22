@@ -39,8 +39,8 @@ const Contact = () => {
   const offices = [
     {
       name: "Bangaluru Office",
-      address: "Dex Co Work, 2nd Floor, 1383/433, 5th Block, HBR Layout, Bangaluru - 560045, India",
-      mapUrl: "https://www.google.com/maps/dir/?api=1&destination=Dex+Co+Work,+2nd+Floor,+1383/433,+5th+Block,+HBR+Layout,+Bangalore+560045,+India",
+      address: "Dex Co Work, 2nd Floor, 1383/433, 5th Block, HBR Layout, Bengaluru - 560043, India",
+      mapUrl: "https://www.google.com/maps/dir/?api=1&destination=Dex+Co+Work,+2nd+Floor,+1383/433,+5th+Block,+HBR+Layout,+Bangalore+560043,+India",
     },
     {
       name: "Kolkata Office",
