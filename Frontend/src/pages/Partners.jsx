@@ -55,6 +55,7 @@ import Axidian from '../assets/Logo/axidian.jpg';
 import Arcon from '../assets/Logo/arcon.jpg';
 import Hrone from '../assets/Logo/hrone.jpg';
 import SmartPing from '../assets/Logo/smartping.jpg';
+import Google from "../assets/Logo/google.png"
 // Create a mapping of partner names to their logo imports
 const partnerLogos = {
   'AWS': Aws,
@@ -126,6 +127,7 @@ const partnerLogos = {
   'Stringee': StringeeLogo,
   'HRone': Hrone,
   'SmartPing': SmartPing,
+  'Google': Google,
 };
 
 const normalizePartnerName = (name) =>
@@ -158,7 +160,7 @@ const Partners = () => {
     {
       title: 'Software License',
       description: 'Strategic software procurement and license management partners for your business needs.',
-      partners: ['MICROSOFT', 'ANYDESK', 'ADOBE', 'HROne',],
+      partners: ['MICROSOFT', 'Google','ANYDESK', 'ADOBE', 'HROne',],
       icon: '💻'
     },
     {
